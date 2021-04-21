@@ -515,7 +515,8 @@ Status Code **200**
     "lon": 0,
     "date": "2019-08-24T14:15:22Z",
     "alt": 0
-  }
+  },
+  "childs": []
 }
 
 ```
@@ -530,6 +531,7 @@ Status Code **200**
 |direction|[MessageDirection](#schemamessagedirection)|false|none|Направление сообщения|
 |subscriber|string¦null|false|none|Отправитель / получатель|
 |location|[Location](#schemalocation)|false|none|Координаты отправки сообщения|
+|childs|array¦null|false|none|Дочерние сообщения*|
 
 <h2 id="tocS_Location">Location</h2>
 
