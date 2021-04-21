@@ -405,6 +405,8 @@ Status Code **200**
 # Структуры
 
 <h2 id="tocS_ApiAccountView">ApiAccountView</h2>
+
+*Структура, содержащая информацию об аккаунте*
 <!-- backwards compatibility -->
 <a id="schemaapiaccountview"></a>
 <a id="schema_ApiAccountView"></a>
@@ -431,6 +433,8 @@ Status Code **200**
 |avatar|string¦null|false|none|Ссылка на аватар|
 
 <h2 id="tocS_ApiDevicePointView">ApiDevicePointView</h2>
+
+*Структура, содержащая информацию о точке устройства*
 <!-- backwards compatibility -->
 <a id="schemaapidevicepointview"></a>
 <a id="schema_ApiDevicePointView"></a>
@@ -458,6 +462,8 @@ Status Code **200**
 |location|[Location](#schemalocation)|false|none|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
+
+*Структура, содержащая информацию об устройстве*
 <!-- backwards compatibility -->
 <a id="schemaapideviceview"></a>
 <a id="schema_ApiDeviceView"></a>
@@ -489,6 +495,8 @@ Status Code **200**
 |lastLocation|[Location](#schemalocation)|false|none|Последнее известное местоположение устройства|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
+
+*Структура, содержащая информацию о сообщении*
 <!-- backwards compatibility -->
 <a id="schemaapimessageview"></a>
 <a id="schema_ApiMessageView"></a>
@@ -524,6 +532,8 @@ Status Code **200**
 |location|[Location](#schemalocation)|false|none|Координаты отправки сообщения|
 
 <h2 id="tocS_Location">Location</h2>
+
+*Структура, содержащая координаты*
 <!-- backwards compatibility -->
 <a id="schemalocation"></a>
 <a id="schema_Location"></a>
@@ -550,6 +560,8 @@ Status Code **200**
 |alt|number(double)¦null|false|none|Высота|
 
 <h2 id="tocS_MessageDirection">MessageDirection</h2>
+
+*Направление сообщения*
 <!-- backwards compatibility -->
 <a id="schemamessagedirection"></a>
 <a id="schema_MessageDirection"></a>
