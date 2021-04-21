@@ -531,7 +531,7 @@ Status Code **200**
 |direction|[MessageDirection](#schemamessagedirection)|false|none|Направление сообщения|
 |subscriber|string¦null|false|none|Отправитель / получатель|
 |location|[Location](#schemalocation)|false|none|Координаты отправки сообщения|
-|childs|array¦null|false|none|Дочерние сообщения*|
+|childs|[[ApiMessageView](#schemaapimessageview)]¦null|false|none|Дочерние сообщения*|
 
 > *Одно сообщение, отправленное с устройства может быть доставлено нескольким получателям (например, на мобильный телефон и email) в завимости от настроек в личном кабинете
 
