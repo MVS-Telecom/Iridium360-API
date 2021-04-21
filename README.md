@@ -255,7 +255,7 @@ Status Code **200**
 |Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |deviceSerial|query|string|false|Серийник устройства|
-|startId|query|integer(int32)|false|Id сообщения (включительно), с которого нужно выдать сообщения|
+|startId|query|string|false|Id сообщения (включительно), с которого нужно выдать сообщения|
 |count|query|integer(int32)|false|Кол-во сообщений|
 |service-session|header|string|true|API токен|
 
