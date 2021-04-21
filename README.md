@@ -291,7 +291,7 @@ Status Code **200**
 
 
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |*anonymous*|[[ApiMessageView](#schemaapimessageview)]|false|none|none|
 |» id|string¦null|false|none|none|
