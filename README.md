@@ -47,7 +47,7 @@
 
 <h3 id="get__rockstar-public_api_v1_account-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiAccountView](#schemaapiaccountview)|
 
@@ -88,7 +88,7 @@
 
 <h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
@@ -140,7 +140,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#schemaapidevicepointview)|
 
@@ -181,7 +181,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_devices-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
@@ -237,7 +237,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDeviceView](#schemaapideviceview)|
 
@@ -283,7 +283,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_messages-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
@@ -350,7 +350,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_messages_{id}-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
 
@@ -401,7 +401,7 @@ string
 
 <h3 id="post__rockstar-public_api_v1_messages_send-responses">Ответ</h3>
 
-|Status|Meaning|Description|Schema|
+|Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
 
