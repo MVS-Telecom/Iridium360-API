@@ -29,7 +29,7 @@
 
 <h3 id="get__rockstar-public_api_v1_account-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |service-session|header|string|true|API токен|
 
@@ -62,7 +62,7 @@
 
 <h3 id="get__rockstar-public_api_v1_points-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |deviceSerial|query|string|false|Серийный номер устройства|
 |start|query|string(date-time)|false|Дата (вкл) с которой выдать точки|
@@ -117,7 +117,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_points_{id}-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |id|path|string|true|Id точки|
 |service-session|header|string|true|API токен|
@@ -155,7 +155,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_devices-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |service-session|header|string|true|API токен|
 
@@ -212,7 +212,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_devices_{id}-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |id|path|string|true|Серийный номер устройства|
 |service-session|header|string|true|API токен|
@@ -252,7 +252,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_messages-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |deviceSerial|query|string|false|Серийник устройства|
 |startId|query|integer(int32)|false|Id сообщения (включительно), с которого нужно выдать сообщения|
@@ -323,7 +323,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_messages_{id}-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |id|path|string|true|Id сообщения|
 |service-session|header|string|true|API токен|
@@ -372,7 +372,7 @@ string
 
 <h3 id="post__rockstar-public_api_v1_messages_send-parameters">Параметры</h3>
 
-|Name|In|Type|Required|Description|
+|Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
 |deviceSerial|query|string|false|Серийный номер устройства|
 |useMobileNumber|query|boolean|false|Использовать мобильный номер аккаунта в качестве отправителя сообщения. По умолчанию используется email аккаунта|
