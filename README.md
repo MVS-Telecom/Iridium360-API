@@ -24,7 +24,7 @@
 
 *Получить информацию об аккаунте*
 
-<h3 id="get__rockstar-public_api_v1_account-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_account-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -42,7 +42,7 @@
 }
 ```
 
-<h3 id="get__rockstar-public_api_v1_account-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_account-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -57,7 +57,7 @@
 
 *Получить список точек устройства*
 
-<h3 id="get__rockstar-public_api_v1_points-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_points-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -83,7 +83,7 @@
 ]
 ```
 
-<h3 id="get__rockstar-public_api_v1_points-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -112,7 +112,7 @@ Status Code **200**
 
 *Получить инфу о точке устройства*
 
-<h3 id="get__rockstar-public_api_v1_points_{id}-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_points_{id}-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -135,7 +135,7 @@ Status Code **200**
 }
 ```
 
-<h3 id="get__rockstar-public_api_v1_points_{id}-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -150,7 +150,7 @@ Status Code **200**
 
 *Получить устройства в аккаунте*
 
-<h3 id="get__rockstar-public_api_v1_devices-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_devices-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -176,7 +176,7 @@ Status Code **200**
 ]
 ```
 
-<h3 id="get__rockstar-public_api_v1_devices-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_devices-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -207,7 +207,7 @@ Status Code **200**
 
 *Получить устройство по серийному номеру в аккаунте*
 
-<h3 id="get__rockstar-public_api_v1_devices_{id}-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_devices_{id}-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -232,7 +232,7 @@ Status Code **200**
 }
 ```
 
-<h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -247,7 +247,7 @@ Status Code **200**
 
 *Получить сообщения отправленные / полученные с устройства*
 
-<h3 id="get__rockstar-public_api_v1_messages-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_messages-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -278,7 +278,7 @@ Status Code **200**
 ]
 ```
 
-<h3 id="get__rockstar-public_api_v1_messages-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_messages-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -318,7 +318,7 @@ Status Code **200**
 
 *Получить сообщение по id*
 
-<h3 id="get__rockstar-public_api_v1_messages_{id}-parameters">Parameters</h3>
+<h3 id="get__rockstar-public_api_v1_messages_{id}-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -345,7 +345,7 @@ Status Code **200**
 }
 ```
 
-<h3 id="get__rockstar-public_api_v1_messages_{id}-responses">Responses</h3>
+<h3 id="get__rockstar-public_api_v1_messages_{id}-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -367,7 +367,7 @@ string
 
 ```
 
-<h3 id="post__rockstar-public_api_v1_messages_send-parameters">Parameters</h3>
+<h3 id="post__rockstar-public_api_v1_messages_send-parameters">Параметры</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -396,7 +396,7 @@ string
 }
 ```
 
-<h3 id="post__rockstar-public_api_v1_messages_send-responses">Responses</h3>
+<h3 id="post__rockstar-public_api_v1_messages_send-responses">Ответ</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
