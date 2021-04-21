@@ -30,7 +30,6 @@
 |---|---|---|---|---|
 |service-session|header|string|true|Service authentication session token|
 
-> Example responses
 
 > 200 Response
 
@@ -67,8 +66,6 @@ This operation does not require authentication
 |end|query|string(date-time)|false|Дата (вкл) до которой выдать точки|
 |count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
 |service-session|header|string|true|Service authentication session token|
-
-> Example responses
 
 > 200 Response
 
@@ -122,7 +119,7 @@ This operation does not require authentication
 |id|path|string|true|Id точки|
 |service-session|header|string|true|Service authentication session token|
 
-> Example responses
+
 
 > 200 Response
 
@@ -159,7 +156,7 @@ This operation does not require authentication
 |---|---|---|---|---|
 |service-session|header|string|true|Service authentication session token|
 
-> Example responses
+
 
 > 200 Response
 
@@ -217,7 +214,7 @@ This operation does not require authentication
 |id|path|string|true|Серийный номер устройства|
 |service-session|header|string|true|Service authentication session token|
 
-> Example responses
+
 
 > 200 Response
 
@@ -259,7 +256,7 @@ This operation does not require authentication
 |count|query|integer(int32)|false|Кол-во сообщений|
 |service-session|header|string|true|Service authentication session token|
 
-> Example responses
+
 
 > 200 Response
 
@@ -328,7 +325,7 @@ This operation does not require authentication
 |id|path|string|true|Id сообщения|
 |service-session|header|string|true|Service authentication session token|
 
-> Example responses
+
 
 > 200 Response
 
@@ -379,7 +376,7 @@ string
 |service-session|header|string|true|Service authentication session token|
 |body|body|string|false|Текст сообщения|
 
-> Example responses
+
 
 > 200 Response
 
