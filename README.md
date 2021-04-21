@@ -20,8 +20,9 @@
 
 # Описание API
 
-Проверить работу API прямо из браузера можно по ссылке [Swagger UI](https://service.iridium360.ru/swagger/index.html)
+> Проверить работу API прямо из браузера можно по ссылке [Swagger UI](https://service.iridium360.ru/swagger/index.html)
 
+***
 `GET /rockstar-public/api/v1/account`
 
 *Получить информацию об аккаунте*
