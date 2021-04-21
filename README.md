@@ -10,7 +10,7 @@
 
 
 # Получение токена
-1. [Войдите](https://www.iridium360.ru/Authentication/Authorize) в личный кабинет iridium360.ru
+1. [Войдите](https://www.iridium360.ru/workplace/device) в личный кабинет iridium360.ru
 2. Перейдите на страницу [настроек аккаунта](https://www.iridium360.ru/Workplace/preferences)
 3. В разделе `API` включите **Разрешить API**
 4. Нажмите кнопку **Получить новый токен API**
