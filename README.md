@@ -49,7 +49,7 @@
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiAccountView](#schemaapiaccountview)|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -104,7 +104,7 @@ Status Code **200**
 |»» alt|number(double)¦null|false|none|none|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -142,7 +142,7 @@ This operation does not require authentication
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#schemaapidevicepointview)|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -199,7 +199,7 @@ Status Code **200**
 |»» alt|number(double)¦null|false|none|none|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -239,7 +239,7 @@ This operation does not require authentication
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDeviceView](#schemaapideviceview)|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -310,7 +310,7 @@ Status Code **200**
 |direction|ToDevice|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -352,7 +352,7 @@ This operation does not require authentication
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 ***
@@ -403,7 +403,7 @@ string
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
 
 <aside class="success">
-This operation does not require authentication
+
 </aside>
 
 # Schemas
