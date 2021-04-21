@@ -23,7 +23,7 @@
 > Проверить работу API прямо из браузера можно по ссылке [Swagger UI](https://service.iridium360.ru/swagger/index.html)
 
 ***
-`GET /rockstar-public/api/v1/account`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/account`
 
 *Получить информацию об аккаунте*
 
@@ -56,7 +56,7 @@
 </aside>
 
 ***
-`GET /rockstar-public/api/v1/points`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/points`
 
 *Получить список точек устройства*
 
@@ -111,7 +111,7 @@ Status Code **200**
 </aside>
 
 ***
-`GET /rockstar-public/api/v1/points/{id}`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/points/{id}`
 
 *Получить инфу о точке устройства*
 
@@ -149,7 +149,7 @@ Status Code **200**
 </aside>
 
 ***
-`GET /rockstar-public/api/v1/devices`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/devices`
 
 *Получить устройства в аккаунте*
 
@@ -206,7 +206,7 @@ Status Code **200**
 </aside>
 
 ***
-`GET /rockstar-public/api/v1/devices/{id}`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/devices/{id}`
 
 *Получить устройство по серийному номеру в аккаунте*
 
@@ -246,7 +246,7 @@ Status Code **200**
 </aside>
 
 ***
-`GET /rockstar-public/api/v1/messages`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/messages`
 
 *Получить сообщения отправленные / полученные с устройства*
 
@@ -317,7 +317,7 @@ Status Code **200**
 </aside>
 
 ***
-`GET /rockstar-public/api/v1/messages/{id}`
+`GET https://service.iridium360.ru/rockstar-public/api/v1/messages/{id}`
 
 *Получить сообщение по id*
 
@@ -359,7 +359,7 @@ Status Code **200**
 </aside>
 
 ***
-`POST /rockstar-public/api/v1/messages/send`
+`POST https://service.iridium360.ru/rockstar-public/api/v1/messages/send`
 
 *Отправить сообщение на устройство*
 
