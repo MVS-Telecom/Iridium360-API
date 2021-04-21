@@ -96,7 +96,7 @@
 
 Status Code **200**
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |*anonymous*|[[ApiDevicePointView](#schemaapidevicepointview)]|false|none|none|
 |» id|string¦null|false|none|none|
@@ -189,7 +189,7 @@ Status Code **200**
 
 Status Code **200**
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |*anonymous*|[[ApiDeviceView](#schemaapideviceview)]|false|none|none|
 |» time|string(date-time)¦null|false|none|none|
@@ -430,7 +430,7 @@ string
 
 ### Properties
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |username|string¦null|false|none|none|
 |email|string¦null|false|none|none|
@@ -459,7 +459,7 @@ string
 
 ### Properties
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |id|string¦null|false|none|none|
 |location|[Location](#schemalocation)|false|none|none|
@@ -488,7 +488,7 @@ string
 
 ### Properties
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |time|string(date-time)¦null|false|none|none|
 |serialNumber|string¦null|false|none|none|
@@ -521,7 +521,7 @@ string
 
 ### Properties
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |id|string¦null|false|none|none|
 |date|string(date-time)|false|none|none|
@@ -549,7 +549,7 @@ string
 
 ### Properties
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |lat|number(double)|false|none|none|
 |lon|number(double)|false|none|none|
@@ -570,7 +570,7 @@ string
 
 ### Properties
 
-|Name|Type|Required|Restrictions|Description|
+|Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |*anonymous*|string|false|none|none|
 
