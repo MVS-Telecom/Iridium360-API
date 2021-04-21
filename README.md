@@ -559,10 +559,10 @@ Status Code **200**
 
 #### Значения
 
-|Property|Value|
+|Значение|Описание|
 |---|---|
-|*anonymous*|FromDevice|
-|*anonymous*|ToDevice|
+|FromDevice|Сообщение с устройства|
+|ToDevice|Сообщение на устройство|
 
 
 
