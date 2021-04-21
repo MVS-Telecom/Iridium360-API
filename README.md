@@ -28,7 +28,7 @@
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 
 > 200 Response
@@ -65,7 +65,7 @@ This operation does not require authentication
 |start|query|string(date-time)|false|Дата (вкл) с которой выдать точки|
 |end|query|string(date-time)|false|Дата (вкл) до которой выдать точки|
 |count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 > 200 Response
 
@@ -117,7 +117,7 @@ This operation does not require authentication
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|Id точки|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 
 
@@ -154,7 +154,7 @@ This operation does not require authentication
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 
 
@@ -212,7 +212,7 @@ This operation does not require authentication
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|Серийный номер устройства|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 
 
@@ -254,7 +254,7 @@ This operation does not require authentication
 |deviceSerial|query|string|false|Серийник устройства|
 |startId|query|integer(int32)|false|Id сообщения (включительно), с которого нужно выдать сообщения|
 |count|query|integer(int32)|false|Кол-во сообщений|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 
 
@@ -323,7 +323,7 @@ This operation does not require authentication
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|Id сообщения|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 
 
 
@@ -373,7 +373,7 @@ string
 |---|---|---|---|---|
 |deviceSerial|query|string|false|Серийный номер устройства|
 |useMobileNumber|query|boolean|false|Использовать мобильный номер аккаунта в качестве отправителя сообщения. По умолчанию используется email аккаунта|
-|service-session|header|string|true|Service authentication session token|
+|service-session|header|string|true|API токен|
 |body|body|string|false|Текст сообщения|
 
 
