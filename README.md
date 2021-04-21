@@ -2,7 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/11313401/114893018-f2cdaf80-9e15-11eb-8f29-5a30734c0c04.png)
 
-В данном репозитории представлено описание работы с HTTP API портала [iridium360.ru](https://iridium360.ru) Вы можете использовать это API для интеграции портала iridium360.ru в ваш сервис, сайт или приложение
+В данном репозитории представлено описание работы с HTTP API портала [iridium360.ru](https://iridium360.ru)
+
+Вы можете использовать это API для интеграции портала iridium360.ru в ваш сервис, сайт или приложение
 
 > **Для работы с API вам необходимо получить токен** в настройках вашего аккаунта на портале iridium360.ru
 
@@ -29,7 +31,7 @@
 |service-session|header|string|true|API токен|
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 {
@@ -65,7 +67,7 @@
 |count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
 |service-session|header|string|true|API токен|
 
-> 200 Response
+> 200 HTTP
 
 ```json
 [
@@ -119,7 +121,7 @@ Status Code **200**
 
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 {
@@ -156,7 +158,7 @@ Status Code **200**
 
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 [
@@ -214,7 +216,7 @@ Status Code **200**
 
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 {
@@ -256,7 +258,7 @@ Status Code **200**
 
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 [
@@ -284,7 +286,7 @@ Status Code **200**
 
 <h3 id="get__rockstar-public_api_v1_messages-responseschema">Формат ответа</h3>
 
-Status Code **200**
+
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
@@ -325,7 +327,7 @@ Status Code **200**
 
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 {
@@ -376,7 +378,7 @@ string
 
 
 
-> 200 Response
+> 200 HTTP
 
 ```json
 {
