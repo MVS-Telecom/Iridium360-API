@@ -483,7 +483,7 @@ Status Code **200**
 
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
-|time|string(date-time)¦null|false|none|none|
+|time|string(date-time)¦null|false|none|Дата актуальности данных|
 |serialNumber|string¦null|false|none|Серийный номер устройства|
 |imei|string¦null|false|none|IMEI устройства|
 |lastLocation|[Location](#schemalocation)|false|none|Последнее известное местоположение устройства|
