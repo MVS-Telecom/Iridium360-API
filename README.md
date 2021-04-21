@@ -425,10 +425,10 @@ Status Code **200**
 
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
-|username|string¦null|false|none|none|
-|email|string¦null|false|none|none|
-|phone|string¦null|false|none|none|
-|avatar|string¦null|false|none|none|
+|username|string¦null|false|none|Имя пользователя|
+|email|string¦null|false|none|Email|
+|phone|string¦null|false|none|Номер мобильного телефона|
+|avatar|string¦null|false|none|Ссылка на аватар|
 
 <h2 id="tocS_ApiDevicePointView">ApiDevicePointView</h2>
 <!-- backwards compatibility -->
@@ -454,8 +454,8 @@ Status Code **200**
 
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
-|id|string¦null|false|none|none|
-|location|[Location](#schemalocation)|false|none|none|
+|id|string¦null|false|none|Id точки|
+|location|[Location](#schemalocation)|false|none|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
 <!-- backwards compatibility -->
@@ -484,9 +484,9 @@ Status Code **200**
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |time|string(date-time)¦null|false|none|none|
-|serialNumber|string¦null|false|none|none|
-|imei|string¦null|false|none|none|
-|lastLocation|[Location](#schemalocation)|false|none|none|
+|serialNumber|string¦null|false|none|Серийный номер устройства|
+|imei|string¦null|false|none|IMEI устройства|
+|lastLocation|[Location](#schemalocation)|false|none|Последнее известное местоположение устройства|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 <!-- backwards compatibility -->
@@ -516,12 +516,12 @@ Status Code **200**
 
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
-|id|string¦null|false|none|none|
-|date|string(date-time)|false|none|none|
-|text|string¦null|false|none|none|
-|direction|[MessageDirection](#schemamessagedirection)|false|none|none|
-|subscriber|string¦null|false|none|none|
-|location|[Location](#schemalocation)|false|none|none|
+|id|string¦null|false|none|Id сообщения|
+|date|string(date-time)|false|none|Дата получения / отправки|
+|text|string¦null|false|none|Текст сообщения|
+|direction|[MessageDirection](#schemamessagedirection)|false|none|Направление сообщения|
+|subscriber|string¦null|false|none|Отправитель / получатель|
+|location|[Location](#schemalocation)|false|none|Координаты отправки сообщения|
 
 <h2 id="tocS_Location">Location</h2>
 <!-- backwards compatibility -->
@@ -544,10 +544,10 @@ Status Code **200**
 
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
-|lat|number(double)|false|none|none|
-|lon|number(double)|false|none|none|
-|date|string(date-time)¦null|false|none|none|
-|alt|number(double)¦null|false|none|none|
+|lat|number(double)|false|none|Широта|
+|lon|number(double)|false|none|Долготва|
+|date|string(date-time)¦null|false|none|Дата|
+|alt|number(double)¦null|false|none|Высота|
 
 <h2 id="tocS_MessageDirection">MessageDirection</h2>
 <!-- backwards compatibility -->
