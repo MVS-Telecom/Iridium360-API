@@ -20,7 +20,6 @@
 
 # Описание API
 
-## get__rockstar-public_api_v1_account
 
 `GET /rockstar-public/api/v1/account`
 
@@ -55,7 +54,6 @@
 This operation does not require authentication
 </aside>
 
-## get__rockstar-public_api_v1_points
 
 `GET /rockstar-public/api/v1/points`
 
@@ -113,7 +111,6 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-## get__rockstar-public_api_v1_points_{id}
 
 `GET /rockstar-public/api/v1/points/{id}`
 
@@ -152,7 +149,6 @@ This operation does not require authentication
 This operation does not require authentication
 </aside>
 
-## get__rockstar-public_api_v1_devices
 
 `GET /rockstar-public/api/v1/devices`
 
@@ -210,8 +206,6 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-## get__rockstar-public_api_v1_devices_{id}
-
 `GET /rockstar-public/api/v1/devices/{id}`
 
 *Получить устройство по серийному номеру в аккаунте*
@@ -250,8 +244,6 @@ This operation does not require authentication
 <aside class="success">
 This operation does not require authentication
 </aside>
-
-## get__rockstar-public_api_v1_messages
 
 `GET /rockstar-public/api/v1/messages`
 
@@ -323,7 +315,6 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-## get__rockstar-public_api_v1_messages_{id}
 
 `GET /rockstar-public/api/v1/messages/{id}`
 
@@ -366,7 +357,6 @@ This operation does not require authentication
 This operation does not require authentication
 </aside>
 
-## post__rockstar-public_api_v1_messages_send
 
 `POST /rockstar-public/api/v1/messages/send`
 
