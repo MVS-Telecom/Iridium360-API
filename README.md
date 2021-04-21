@@ -89,7 +89,7 @@
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="get__rockstar-public_api_v1_points-responseschema">Response Schema</h3>
+<h3 id="get__rockstar-public_api_v1_points-responseschema">Формат ответа</h3>
 
 Status Code **200**
 
@@ -182,7 +182,7 @@ Status Code **200**
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="get__rockstar-public_api_v1_devices-responseschema">Response Schema</h3>
+<h3 id="get__rockstar-public_api_v1_devices-responseschema">Формат ответа</h3>
 
 Status Code **200**
 
@@ -284,7 +284,7 @@ Status Code **200**
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
 
-<h3 id="get__rockstar-public_api_v1_messages-responseschema">Response Schema</h3>
+<h3 id="get__rockstar-public_api_v1_messages-responseschema">Формат ответа</h3>
 
 Status Code **200**
 
@@ -406,7 +406,7 @@ string
 
 </aside>
 
-# Schemas
+# Структуры
 
 <h2 id="tocS_ApiAccountView">ApiAccountView</h2>
 <!-- backwards compatibility -->
