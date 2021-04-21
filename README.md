@@ -556,16 +556,6 @@ Status Code **200**
 <a id="tocSmessagedirection"></a>
 <a id="tocsmessagedirection"></a>
 
-```json
-"FromDevice"
-
-```
-
-### Параметры
-
-|Имя|Тип|Обязательно|Ограничения|Описание|
-|---|---|---|---|---|
-|*anonymous*|string|false|none|none|
 
 #### Значения
 
