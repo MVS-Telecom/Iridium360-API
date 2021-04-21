@@ -319,7 +319,7 @@ Status Code **200**
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/messages/{id}`
 
-*Получить сообщение по id, а также его дочерние** сообщения (при их наличии)*
+*Получить сообщение по id, а также его дочерние*** сообщения (при их наличии)*
 
 <h3 id="get__rockstar-public_api_v1_messages_{id}-parameters">Параметры</h3>
 
