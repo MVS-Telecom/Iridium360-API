@@ -10,6 +10,7 @@
 
 > **Для работы с API вам необходимо получить токен** в настройках вашего аккаунта на портале iridium360.ru
 
+
 # Получение токена
 1. [Войдите](https://www.iridium360.ru/Authentication/Authorize) в личный кабинет iridium360.ru
 2. Перейдите на страницу [настроек аккаунта](https://www.iridium360.ru/Workplace/preferences)
@@ -18,8 +19,8 @@
 
 <img width="678" alt="Screenshot 2021-04-15 at 18 28 14" src="https://user-images.githubusercontent.com/11313401/114896063-ae8fde80-9e18-11eb-855d-37a8b62d4c82.png">
 
-# Описание API
 
+# Описание API
 
 `GET /rockstar-public/api/v1/account`
 
@@ -54,7 +55,7 @@
 This operation does not require authentication
 </aside>
 
-
+***
 `GET /rockstar-public/api/v1/points`
 
 *Получить список точек устройства*
@@ -111,7 +112,7 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-
+***
 `GET /rockstar-public/api/v1/points/{id}`
 
 *Получить инфу о точке устройства*
@@ -149,7 +150,7 @@ This operation does not require authentication
 This operation does not require authentication
 </aside>
 
-
+***
 `GET /rockstar-public/api/v1/devices`
 
 *Получить устройства в аккаунте*
@@ -206,6 +207,7 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
+***
 `GET /rockstar-public/api/v1/devices/{id}`
 
 *Получить устройство по серийному номеру в аккаунте*
@@ -245,6 +247,7 @@ This operation does not require authentication
 This operation does not require authentication
 </aside>
 
+***
 `GET /rockstar-public/api/v1/messages`
 
 *Получить сообщения отправленные / полученные с устройства*
@@ -315,7 +318,7 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-
+***
 `GET /rockstar-public/api/v1/messages/{id}`
 
 *Получить сообщение по id*
@@ -357,7 +360,7 @@ This operation does not require authentication
 This operation does not require authentication
 </aside>
 
-
+***
 `POST /rockstar-public/api/v1/messages/send`
 
 *Отправить сообщение на устройство*
