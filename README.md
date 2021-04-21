@@ -545,7 +545,7 @@ Status Code **200**
 |Имя|Тип|Обязательно|Ограничения|Описание|
 |---|---|---|---|---|
 |lat|number(double)|false|none|Широта|
-|lon|number(double)|false|none|Долготва|
+|lon|number(double)|false|none|Долгота|
 |date|string(date-time)¦null|false|none|Дата|
 |alt|number(double)¦null|false|none|Высота|
 
