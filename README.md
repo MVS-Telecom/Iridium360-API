@@ -60,7 +60,7 @@
 
 |Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|deviceSerial|query|string|false|Серийный номер устройства|
+|deviceSerial|query|string|true|Серийный номер устройства|
 |start|query|string(date-time)|false|Дата (вкл) с которой выдать точки|
 |end|query|string(date-time)|false|Дата (вкл) до которой выдать точки|
 |count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
@@ -243,7 +243,7 @@
 
 |Имя|Расположение|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|deviceSerial|query|string|false|Серийник устройства|
+|deviceSerial|query|string|true|Серийный номер устройства|
 |startId|query|string|false|Id сообщения (включительно), с которого нужно выдать сообщения|
 |count|query|integer(int32)|false|Кол-во сообщений|
 |service-session|header|string|true|API токен|
