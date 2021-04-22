@@ -364,7 +364,7 @@
 |deviceSerial|query|string|false|Серийный номер устройства|
 |useMobileNumber|query|boolean|false|Использовать мобильный номер аккаунта в качестве отправителя сообщения. По умолчанию используется email аккаунта|
 |service-session|header|string|true|API токен|
-|body|body|string|false|Текст сообщения|
+|messageText|body|string|false|Текст сообщения|
 
 <h3 id="post__rockstar-public_api_v1_messages_send-responses">Ответ</h3>
 
