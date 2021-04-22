@@ -253,17 +253,6 @@
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiMessageView](#schemaapimessageview)]|
 
 
-#### Значения
-
-|Property|Value|
-|---|---|
-|direction|FromDevice|
-|direction|ToDevice|
-
-<aside class="success">
-
-</aside>
-
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/messages/{id}`
 
@@ -278,20 +267,20 @@
 
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 {
-  "id": "string",
-  "date": "2019-08-24T14:15:22Z",
-  "text": "string",
+  "id": "yacgLXd4sUGJaNiZmdfhAQ",
+  "date": "2021-01-24T14:15:22Z",
+  "text": "сообщение с устройства",
   "direction": "FromDevice",
-  "subscriber": "string",
+  "subscriber": "79153925491",
   "location": {
-    "lat": 0,
-    "lon": 0,
-    "date": "2019-08-24T14:15:22Z",
-    "alt": 0
+    "lat": -19.858583,
+    "lon": 141.005343,
+    "date": "2021-01-24T14:13:15Z",
+    "alt": 2
   }
 }
 ```
