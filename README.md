@@ -31,7 +31,7 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|service-session|header|string|true|API токен|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_account-responses">Ответ</h3>
@@ -60,11 +60,11 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|deviceSerial|query|string|true|Серийный номер устройства|
-|start|query|string(date-time)|false|Дата (вкл) с которой выдать точки|
-|end|query|string(date-time)|false|Дата (вкл) до которой выдать точки|
-|count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
-|service-session|header|string|true|API токен|
+|deviceSerial|query|string|да|Серийный номер устройства|
+|start|query|string(date-time)|нет|Дата (вкл) с которой выдать точки|
+|end|query|string(date-time)|нет|Дата (вкл) до которой выдать точки|
+|count|query|integer(int32)|нет|Максимальное кол-во выдаваемых точек|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
@@ -116,8 +116,8 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|id|path|string|true|Id точки|
-|service-session|header|string|true|API токен|
+|id|path|string|да|Id точки|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
@@ -149,7 +149,7 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|service-session|header|string|true|API токен|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_devices-responses">Ответ</h3>
@@ -207,8 +207,8 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|id|path|string|true|Серийный номер устройства|
-|service-session|header|string|true|API токен|
+|id|path|string|да|Серийный номер устройства|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Ответ</h3>
@@ -243,10 +243,10 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|deviceSerial|query|string|true|Серийный номер устройства|
-|startId|query|string|false|Id сообщения (включительно), с которого нужно выдать сообщения|
-|count|query|integer(int32)|false|Кол-во сообщений|
-|service-session|header|string|true|API токен|
+|deviceSerial|query|string|да|Серийный номер устройства|
+|startId|query|string|нет|Id сообщения (включительно), с которого нужно выдать сообщения|
+|count|query|integer(int32)|нет|Кол-во сообщений|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_messages-responses">Ответ</h3>
@@ -310,8 +310,8 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|id|path|string|true|Id сообщения|
-|service-session|header|string|true|API токен|
+|id|path|string|да|Id сообщения|
+|service-session|header|string|да|API токен|
 
 
 <h3 id="get__rockstar-public_api_v1_messages_{id}-responses">Ответ</h3>
@@ -361,10 +361,10 @@
 
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|deviceSerial|query|string|true|Серийный номер устройства|
-|useMobileNumber|query|boolean|false|Использовать мобильный номер аккаунта в качестве отправителя сообщения. По умолчанию используется email аккаунта|
-|service-session|header|string|true|API токен|
-|messageText|body|string|true|Текст сообщения|
+|deviceSerial|query|string|да|Серийный номер устройства|
+|useMobileNumber|query|boolean|нет|Использовать мобильный номер аккаунта в качестве отправителя сообщения. По умолчанию используется email аккаунта|
+|service-session|header|string|да|API токен|
+|messageText|body|string|да|Текст сообщения|
 
 <h3 id="post__rockstar-public_api_v1_messages_send-responses">Ответ</h3>
 
@@ -409,10 +409,10 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|username|string¦null|true|Имя пользователя|
-|email|string¦null|true|Email|
-|phone|string¦null|false|Номер мобильного телефона|
-|avatar|string¦null|false|Ссылка на аватар|
+|username|string¦null|да|Имя пользователя|
+|email|string¦null|да|Email|
+|phone|string¦null|нет|Номер мобильного телефона|
+|avatar|string¦null|нет|Ссылка на аватар|
 
 <h2 id="tocS_ApiDevicePointView">ApiDevicePointView</h2>
 
@@ -440,8 +440,8 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|id|string¦null|true|Id точки|
-|location|[Location](#schemalocation)|true|Координаты точки|
+|id|string¦null|да|Id точки|
+|location|[Location](#schemalocation)|да|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
 
@@ -471,10 +471,10 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|time|string(date-time)¦null|true|Дата актуальности данных|
-|serialNumber|string¦null|true|Серийный номер устройства|
-|imei|string¦null|true|IMEI устройства|
-|lastLocation|[Location](#schemalocation)|false|Последнее известное местоположение устройства|
+|time|string(date-time)¦null|да|Дата актуальности данных|
+|serialNumber|string¦null|да|Серийный номер устройства|
+|imei|string¦null|да|IMEI устройства|
+|lastLocation|[Location](#schemalocation)|нет|Последнее известное местоположение устройства|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 
@@ -507,13 +507,13 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|id|string¦null|true|Id сообщения|
-|date|string(date-time)|true|Дата получения / отправки|
-|text|string¦null|true|Текст сообщения|
-|direction|[MessageDirection](#schemamessagedirection)|true|Направление сообщения|
-|subscriber|string¦null|false|Отправитель / получатель|
-|location|[Location](#schemalocation)|true|Координаты отправки сообщения|
-|childs|array [[ApiMessageView](#schemaapimessageview)]¦null|false|Дочерние сообщения*|
+|id|string¦null|да|Id сообщения|
+|date|string(date-time)|да|Дата получения / отправки|
+|text|string¦null|да|Текст сообщения|
+|direction|[MessageDirection](#schemamessagedirection)|да|Направление сообщения|
+|subscriber|string¦null|нет|Отправитель / получатель|
+|location|[Location](#schemalocation)|да|Координаты отправки сообщения|
+|childs|array [[ApiMessageView](#schemaapimessageview)]¦null|нет|Дочерние сообщения*|
 
 > *Одно сообщение, отправленное с устройства может быть доставлено нескольким получателям (например, на мобильный телефон и email) в завимости от настроек в личном кабинете
 
@@ -540,10 +540,10 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|---|
-|lat|number(double)|true|Широта|
-|lon|number(double)|true|Долгота|
-|date|string(date-time)¦null|true|Дата|
-|alt|number(double)¦null|false|Высота|
+|lat|number(double)|да|Широта|
+|lon|number(double)|да|Долгота|
+|date|string(date-time)¦null|да|Дата|
+|alt|number(double)¦null|нет|Высота|
 
 <h2 id="tocS_MessageDirection">MessageDirection</h2>
 
