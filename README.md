@@ -34,6 +34,12 @@
 |service-session|header|string|true|API токен|
 
 
+<h3 id="get__rockstar-public_api_v1_account-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiAccountView](#schemaapiaccountview)]|
+
 > Пример ответа
 
 ```json
@@ -44,16 +50,6 @@
   "avatar": "https://www.iridium360.ru/api/images/raw/270b62759cf0438aacbd0304503225e0/209c61991f9c4af682d034442f746b12_M"
 }
 ```
-
-<h3 id="get__rockstar-public_api_v1_account-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiAccountView](#schemaapiaccountview)]|
-
-<aside class="success">
-
-</aside>
 
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/points`
@@ -69,6 +65,13 @@
 |end|query|string(date-time)|false|Дата (вкл) до которой выдать точки|
 |count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
 |service-session|header|string|true|API токен|
+
+
+<h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#schemaapidevicepointview)]|
 
 > Пример ответа
 
@@ -95,18 +98,6 @@
 ]
 ```
 
-<h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#schemaapidevicepointview)]|
-
-<h3 id="get__rockstar-public_api_v1_points-responseschema">Формат ответа</h3>
-
-<aside class="success">
-
-</aside>
-
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/points/{id}`
 
@@ -120,6 +111,11 @@
 |service-session|header|string|true|API токен|
 
 
+<h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#schemaapidevicepointview)|
 
 > Пример ответа
 
@@ -135,13 +131,6 @@
   }
 ```
 
-<h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#schemaapidevicepointview)|
-
-
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/devices`
 
@@ -154,6 +143,11 @@
 |service-session|header|string|true|API токен|
 
 
+<h3 id="get__rockstar-public_api_v1_devices-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDeviceView](#schemaapideviceview)]|
 
 > Пример ответа
 
@@ -184,12 +178,6 @@
 ]
 ```
 
-<h3 id="get__rockstar-public_api_v1_devices-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDeviceView](#schemaapideviceview)]|
-
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/devices/{id}`
 
@@ -202,6 +190,12 @@
 |id|path|string|true|Серийный номер устройства|
 |service-session|header|string|true|API токен|
 
+
+<h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDeviceView](#schemaapideviceview)|
 
 
 > Пример ответа
@@ -220,16 +214,6 @@
   }
 ```
 
-<h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDeviceView](#schemaapideviceview)|
-
-<aside class="success">
-
-</aside>
-
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/messages`
 
@@ -245,6 +229,11 @@
 |service-session|header|string|true|API токен|
 
 
+<h3 id="get__rockstar-public_api_v1_messages-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiMessageView](#schemaapimessageview)]|
 
 > Пример ответа
 
@@ -292,13 +281,6 @@
 ]
 ```
 
-<h3 id="get__rockstar-public_api_v1_messages-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiMessageView](#schemaapimessageview)]|
-
-
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/messages/{id}`
 
@@ -312,6 +294,11 @@
 |service-session|header|string|true|API токен|
 
 
+<h3 id="get__rockstar-public_api_v1_messages_{id}-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
 
 > Пример ответа
 
@@ -345,16 +332,6 @@
 }
 ```
 
-<h3 id="get__rockstar-public_api_v1_messages_{id}-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
-
-<aside class="success">
-
-</aside>
-
 ***
 `POST https://service.iridium360.ru/rockstar-public/api/v1/messages/send`
 
@@ -369,7 +346,11 @@
 |service-session|header|string|true|API токен|
 |body|body|string|false|Текст сообщения|
 
+<h3 id="post__rockstar-public_api_v1_messages_send-responses">Ответ</h3>
 
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
 
 > Пример ответа
 
@@ -382,16 +363,6 @@
   "subscriber": "79153925491"
 }
 ```
-
-<h3 id="post__rockstar-public_api_v1_messages_send-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
-
-<aside class="success">
-
-</aside>
 
 # Структуры
 
