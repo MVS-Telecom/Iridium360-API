@@ -404,10 +404,10 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|
-|username|string¦null|да|Имя пользователя|
-|email|string¦null|да|Email|
-|phone|string¦null|нет|Номер мобильного телефона|
-|avatar|string¦null|нет|Ссылка на аватар|
+|username|string|да|Имя пользователя|
+|email|string|да|Email|
+|phone|string|нет|Номер мобильного телефона|
+|avatar|string|нет|Ссылка на аватар|
 
 <h2 id="tocS_ApiDevicePointView">ApiDevicePointView</h2>
 
@@ -430,7 +430,7 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|
-|id|string¦null|да|Id точки|
+|id|string|да|Id точки|
 |location|[Location](#schemalocation)|да|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
@@ -456,9 +456,9 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|
-|time|string(date-time)¦null|да|Дата актуальности данных|
-|serialNumber|string¦null|да|Серийный номер устройства|
-|imei|string¦null|да|IMEI устройства|
+|time|string(date-time)|да|Дата актуальности данных|
+|serialNumber|string|да|Серийный номер устройства|
+|imei|string|да|IMEI устройства|
 |lastLocation|[Location](#schemalocation)|нет|Последнее известное местоположение устройства|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
@@ -487,13 +487,13 @@
 
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|
-|id|string¦null|да|Id сообщения|
+|id|string|да|Id сообщения|
 |date|string(date-time)|да|Дата получения / отправки|
-|text|string¦null|да|Текст сообщения|
+|text|string|да|Текст сообщения|
 |direction|[MessageDirection](#schemamessagedirection)|да|Направление сообщения|
-|subscriber|string¦null|нет|Отправитель / получатель|
+|subscriber|string|нет|Отправитель / получатель|
 |location|[Location](#schemalocation)|да|Координаты отправки сообщения|
-|childs|array [[ApiMessageView](#schemaapimessageview)]¦null|нет|Дочерние сообщения*|
+|childs|array [[ApiMessageView](#schemaapimessageview)]|нет|Дочерние сообщения*|
 
 > *Одно сообщение, отправленное с устройства может быть доставлено нескольким получателям (например, на мобильный телефон и email) в завимости от настроек в личном кабинете
 
@@ -517,8 +517,8 @@
 |---|---|---|---|
 |lat|number(double)|да|Широта|
 |lon|number(double)|да|Долгота|
-|date|string(date-time)¦null|да|Дата|
-|alt|number(double)¦null|нет|Высота|
+|date|string(date-time)|да|Дата|
+|alt|number(double)|нет|Высота|
 
 <h2 id="tocS_MessageDirection">MessageDirection</h2>
 
