@@ -49,7 +49,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array[ApiAccountView](#schemaapiaccountview)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiAccountView](#schemaapiaccountview)]|
 
 <aside class="success">
 
@@ -90,7 +90,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[[ApiDevicePointView](#schemaapidevicepointview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#schemaapidevicepointview)]|
 
 <h3 id="get__rockstar-public_api_v1_points-responseschema">Формат ответа</h3>
 
