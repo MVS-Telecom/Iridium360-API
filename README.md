@@ -407,12 +407,12 @@
 
 ### Параметры
 
-|Имя|Тип|Обязательно|Ограничения|Описание|
+|Имя|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|username|string¦null|true|none|Имя пользователя|
-|email|string¦null|true|none|Email|
-|phone|string¦null|false|none|Номер мобильного телефона|
-|avatar|string¦null|false|none|Ссылка на аватар|
+|username|string¦null|true|Имя пользователя|
+|email|string¦null|true|Email|
+|phone|string¦null|false|Номер мобильного телефона|
+|avatar|string¦null|false|Ссылка на аватар|
 
 <h2 id="tocS_ApiDevicePointView">ApiDevicePointView</h2>
 
@@ -438,10 +438,10 @@
 
 ### Параметры
 
-|Имя|Тип|Обязательно|Ограничения|Описание|
+|Имя|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|id|string¦null|true|none|Id точки|
-|location|[Location](#schemalocation)|true|none|Координаты точки|
+|id|string¦null|true|Id точки|
+|location|[Location](#schemalocation)|true|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
 
@@ -469,12 +469,12 @@
 
 ### Параметры
 
-|Имя|Тип|Обязательно|Ограничения|Описание|
+|Имя|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|time|string(date-time)¦null|true|none|Дата актуальности данных|
-|serialNumber|string¦null|true|none|Серийный номер устройства|
-|imei|string¦null|true|none|IMEI устройства|
-|lastLocation|[Location](#schemalocation)|false|none|Последнее известное местоположение устройства|
+|time|string(date-time)¦null|true|Дата актуальности данных|
+|serialNumber|string¦null|true|Серийный номер устройства|
+|imei|string¦null|true|IMEI устройства|
+|lastLocation|[Location](#schemalocation)|false|Последнее известное местоположение устройства|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 
@@ -505,15 +505,15 @@
 
 ### Параметры
 
-|Имя|Тип|Обязательно|Ограничения|Описание|
+|Имя|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|id|string¦null|true|none|Id сообщения|
-|date|string(date-time)|true|none|Дата получения / отправки|
-|text|string¦null|true|none|Текст сообщения|
-|direction|[MessageDirection](#schemamessagedirection)|true|none|Направление сообщения|
-|subscriber|string¦null|false|none|Отправитель / получатель|
-|location|[Location](#schemalocation)|true|none|Координаты отправки сообщения|
-|childs|array [[ApiMessageView](#schemaapimessageview)]¦null|false|none|Дочерние сообщения*|
+|id|string¦null|true|Id сообщения|
+|date|string(date-time)|true|Дата получения / отправки|
+|text|string¦null|true|Текст сообщения|
+|direction|[MessageDirection](#schemamessagedirection)|true|Направление сообщения|
+|subscriber|string¦null|false|Отправитель / получатель|
+|location|[Location](#schemalocation)|true|Координаты отправки сообщения|
+|childs|array [[ApiMessageView](#schemaapimessageview)]¦null|false|Дочерние сообщения*|
 
 > *Одно сообщение, отправленное с устройства может быть доставлено нескольким получателям (например, на мобильный телефон и email) в завимости от настроек в личном кабинете
 
@@ -538,12 +538,12 @@
 
 ### Параметры
 
-|Имя|Тип|Обязательно|Ограничения|Описание|
+|Имя|Тип|Обязательно|Описание|
 |---|---|---|---|---|
-|lat|number(double)|true|none|Широта|
-|lon|number(double)|true|none|Долгота|
-|date|string(date-time)¦null|true|none|Дата|
-|alt|number(double)¦null|false|none|Высота|
+|lat|number(double)|true|Широта|
+|lon|number(double)|true|Долгота|
+|date|string(date-time)¦null|true|Дата|
+|alt|number(double)¦null|false|Высота|
 
 <h2 id="tocS_MessageDirection">MessageDirection</h2>
 
