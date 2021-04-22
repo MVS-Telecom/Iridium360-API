@@ -49,7 +49,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiAccountView](#schemaapiaccountview)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array[ApiAccountView](#schemaapiaccountview)|
 
 <aside class="success">
 
@@ -132,9 +132,6 @@
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#schemaapidevicepointview)|
 
-<aside class="success">
-
-</aside>
 
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/devices`
@@ -171,27 +168,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
-
-<h3 id="get__rockstar-public_api_v1_devices-responseschema">Формат ответа</h3>
-
-Status Code **200**
-
-|Имя|Тип|Обязательно|Ограничения|Описание|
-|---|---|---|---|---|
-|*anonymous*|[[ApiDeviceView](#schemaapideviceview)]|false|none|none|
-|» time|string(date-time)¦null|false|none|none|
-|» serialNumber|string¦null|false|none|none|
-|» imei|string¦null|false|none|none|
-|» lastLocation|[Location](#schemalocation)|false|none|none|
-|»» lat|number(double)|false|none|none|
-|»» lon|number(double)|false|none|none|
-|»» date|string(date-time)¦null|false|none|none|
-|»» alt|number(double)¦null|false|none|none|
-
-<aside class="success">
-
-</aside>
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array[[ApiDeviceView](#schemaapideviceview)]|
 
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/devices/{id}`
@@ -273,25 +250,8 @@ Status Code **200**
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array[[ApiMessageView](#schemaapimessageview)]|
 
-<h3 id="get__rockstar-public_api_v1_messages-responseschema">Формат ответа</h3>
-
-
-
-|Имя|Тип|Обязательно|Ограничения|Описание|
-|---|---|---|---|---|
-|*anonymous*|[[ApiMessageView](#schemaapimessageview)]|false|none|none|
-|» id|string¦null|false|none|none|
-|» date|string(date-time)|false|none|none|
-|» text|string¦null|false|none|none|
-|» direction|[MessageDirection](#schemamessagedirection)|false|none|none|
-|» subscriber|string¦null|false|none|none|
-|» location|[Location](#schemalocation)|false|none|none|
-|»» lat|number(double)|false|none|none|
-|»» lon|number(double)|false|none|none|
-|»» date|string(date-time)¦null|false|none|none|
-|»» alt|number(double)¦null|false|none|none|
 
 #### Значения
 
