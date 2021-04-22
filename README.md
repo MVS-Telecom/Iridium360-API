@@ -168,7 +168,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array[[ApiDeviceView](#schemaapideviceview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDeviceView](#schemaapideviceview)]|
 
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/devices/{id}`
@@ -250,7 +250,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array[[ApiMessageView](#schemaapimessageview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiMessageView](#schemaapimessageview)]|
 
 
 #### Значения
