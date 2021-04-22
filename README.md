@@ -38,7 +38,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiAccountView](#schemaapiaccountview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiAccountView](#apiaccountview)]|
 
 > Пример ответа
 
@@ -71,7 +71,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#schemaapidevicepointview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#apidevicepointview)]|
 
 > Пример ответа
 
@@ -124,7 +124,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#schemaapidevicepointview)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#apidevicepointview)|
 
 > Пример ответа
 
@@ -156,7 +156,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDeviceView](#schemaapideviceview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDeviceView](#apideviceview)]|
 
 > Пример ответа
 
@@ -215,7 +215,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDeviceView](#schemaapideviceview)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDeviceView](#apideviceview)|
 
 
 > Пример ответа
@@ -253,7 +253,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiMessageView](#schemaapimessageview)]|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiMessageView](#apimessageview)]|
 
 > Пример ответа
 
@@ -318,7 +318,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#apimessageview)|
 
 > Пример ответа
 
@@ -372,7 +372,7 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#schemaapimessageview)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiMessageView](#apimessageview)|
 
 > Пример ответа
 
@@ -433,7 +433,7 @@
 |Имя|Тип|Обязательный|Описание|
 |---|---|---|---|
 |id|string|да|Id точки|
-|location|[Location](#schemalocation)|да|Координаты точки|
+|location|[Location](#location)|да|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
 
@@ -461,7 +461,7 @@
 |time|string(date-time)|да|Дата актуальности данных|
 |serialNumber|string|да|Серийный номер устройства|
 |imei|string|да|IMEI устройства|
-|lastLocation|[Location](#schemalocation)|нет|Последнее известное местоположение устройства|
+|lastLocation|[Location](#location)|нет|Последнее известное местоположение устройства|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 
@@ -492,10 +492,10 @@
 |id|string|да|Id сообщения|
 |date|string(date-time)|да|Дата получения / отправки|
 |text|string|да|Текст сообщения|
-|direction|[MessageDirection](#schemamessagedirection)|да|Направление сообщения|
+|direction|[MessageDirection](#messagedirection)|да|Направление сообщения|
 |subscriber|string|нет|Отправитель / получатель|
-|location|[Location](#schemalocation)|да|Координаты отправки сообщения|
-|childs|array [[ApiMessageView](#schemaapimessageview)]|нет|Дочерние сообщения*|
+|location|[Location](#location)|да|Координаты отправки сообщения|
+|childs|array [[ApiMessageView](#apimessageview)]|нет|Дочерние сообщения*|
 
 > *Одно сообщение, отправленное с устройства может быть доставлено нескольким получателям (например, на мобильный телефон и email) в завимости от настроек в личном кабинете
 
