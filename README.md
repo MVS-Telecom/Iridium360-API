@@ -389,11 +389,6 @@
 <h2 id="tocS_ApiAccountView">ApiAccountView</h2>
 
 *Структура, содержащая информацию об аккаунте*
-<!-- backwards compatibility -->
-<a id="schemaapiaccountview"></a>
-<a id="schema_ApiAccountView"></a>
-<a id="tocSapiaccountview"></a>
-<a id="tocsapiaccountview"></a>
 
 ```json
 {
@@ -408,7 +403,7 @@
 ### Параметры
 
 |Имя|Тип|Обязательный|Описание|
-|---|---|---|---|---|
+|---|---|---|---|
 |username|string¦null|да|Имя пользователя|
 |email|string¦null|да|Email|
 |phone|string¦null|нет|Номер мобильного телефона|
@@ -417,11 +412,6 @@
 <h2 id="tocS_ApiDevicePointView">ApiDevicePointView</h2>
 
 *Структура, содержащая информацию о точке устройства*
-<!-- backwards compatibility -->
-<a id="schemaapidevicepointview"></a>
-<a id="schema_ApiDevicePointView"></a>
-<a id="tocSapidevicepointview"></a>
-<a id="tocsapidevicepointview"></a>
 
 ```json
 {
@@ -439,18 +429,13 @@
 ### Параметры
 
 |Имя|Тип|Обязательный|Описание|
-|---|---|---|---|---|
+|---|---|---|---|
 |id|string¦null|да|Id точки|
 |location|[Location](#schemalocation)|да|Координаты точки|
 
 <h2 id="tocS_ApiDeviceView">ApiDeviceView</h2>
 
 *Структура, содержащая информацию об устройстве*
-<!-- backwards compatibility -->
-<a id="schemaapideviceview"></a>
-<a id="schema_ApiDeviceView"></a>
-<a id="tocSapideviceview"></a>
-<a id="tocsapideviceview"></a>
 
 ```json
 {
@@ -470,7 +455,7 @@
 ### Параметры
 
 |Имя|Тип|Обязательный|Описание|
-|---|---|---|---|---|
+|---|---|---|---|
 |time|string(date-time)¦null|да|Дата актуальности данных|
 |serialNumber|string¦null|да|Серийный номер устройства|
 |imei|string¦null|да|IMEI устройства|
@@ -479,11 +464,6 @@
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 
 *Структура, содержащая информацию о сообщении*
-<!-- backwards compatibility -->
-<a id="schemaapimessageview"></a>
-<a id="schema_ApiMessageView"></a>
-<a id="tocSapimessageview"></a>
-<a id="tocsapimessageview"></a>
 
 ```json
 {
@@ -506,7 +486,7 @@
 ### Параметры
 
 |Имя|Тип|Обязательный|Описание|
-|---|---|---|---|---|
+|---|---|---|---|
 |id|string¦null|да|Id сообщения|
 |date|string(date-time)|да|Дата получения / отправки|
 |text|string¦null|да|Текст сообщения|
@@ -520,11 +500,6 @@
 <h2 id="tocS_Location">Location</h2>
 
 *Структура, содержащая координаты*
-<!-- backwards compatibility -->
-<a id="schemalocation"></a>
-<a id="schema_Location"></a>
-<a id="tocSlocation"></a>
-<a id="tocslocation"></a>
 
 ```json
 {
@@ -539,7 +514,7 @@
 ### Параметры
 
 |Имя|Тип|Обязательный|Описание|
-|---|---|---|---|---|
+|---|---|---|---|
 |lat|number(double)|да|Широта|
 |lon|number(double)|да|Долгота|
 |date|string(date-time)¦null|да|Дата|
@@ -548,11 +523,6 @@
 <h2 id="tocS_MessageDirection">MessageDirection</h2>
 
 *Направление сообщения*
-<!-- backwards compatibility -->
-<a id="schemamessagedirection"></a>
-<a id="schema_MessageDirection"></a>
-<a id="tocSmessagedirection"></a>
-<a id="tocsmessagedirection"></a>
 
 
 #### Значения
