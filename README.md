@@ -34,14 +34,14 @@
 |service-session|header|string|true|API токен|
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 {
-  "username": "string",
-  "email": "string",
-  "phone": "string",
-  "avatar": "string"
+  "username": "Иван Иванов",
+  "email": "example@mail.ru",
+  "phone": "+79153925491",
+  "avatar": "https://www.iridium360.ru/api/images/raw/270b62759cf0438aacbd0304503225e0/209c61991f9c4af682d034442f746b12_M"
 }
 ```
 
@@ -70,17 +70,26 @@
 |count|query|integer(int32)|false|Максимальное кол-во выдаваемых точек|
 |service-session|header|string|true|API токен|
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 [
   {
-    "id": "string",
+    "id": "w7oUijvyIECNJPl2pFNnzg",
     "location": {
-      "lat": 0,
-      "lon": 0,
-      "date": "2019-08-24T14:15:22Z",
-      "alt": 0
+      "lat": -19.858583,
+      "lon": 141.005343,
+      "date": "2021-01-25T14:15:22Z",
+      "alt": 2
+    }
+  },
+  {
+    "id": "YEAJoY2FdUiSN8itgj3d3Q",
+    "location": {
+      "lat": -19.85858,
+      "lon": 141.00531,
+      "date": "2021-01-24T08:01:54Z",
+      "alt": 3
     }
   }
 ]
@@ -112,18 +121,18 @@
 
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 {
-  "id": "string",
-  "location": {
-    "lat": 0,
-    "lon": 0,
-    "date": "2019-08-24T14:15:22Z",
-    "alt": 0
+    "id": "YEAJoY2FdUiSN8itgj3d3Q",
+    "location": {
+      "lat": -19.85858,
+      "lon": 141.00531,
+      "date": "2021-01-24T08:01:54Z",
+      "alt": 3
+    }
   }
-}
 ```
 
 <h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
@@ -146,19 +155,30 @@
 
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 [
   {
-    "time": "2019-08-24T14:15:22Z",
-    "serialNumber": "string",
-    "imei": "string",
+    "time": "2021-01-24T14:15:22Z",
+    "serialNumber": "10976",
+    "imei": "1088310395832939554821",
     "lastLocation": {
-      "lat": 0,
-      "lon": 0,
-      "date": "2019-08-24T14:15:22Z",
-      "alt": 0
+      "lat": -19.85858,
+      "lon": 141.00531,
+      "date": "2021-01-23T08:01:54Z",
+      "alt": 3
+    }
+  },
+  {
+    "time": "2021-01-24T14:15:22Z",
+    "serialNumber": "209356",
+    "imei": "1088310383288683021",
+    "lastLocation": {
+      "lat": -42.792091,
+      "lon": 146.909608,
+      "date": "2021-01-23T08:01:54Z",
+      "alt": 12
     }
   }
 ]
@@ -184,20 +204,20 @@
 
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 {
-  "time": "2019-08-24T14:15:22Z",
-  "serialNumber": "string",
-  "imei": "string",
-  "lastLocation": {
-    "lat": 0,
-    "lon": 0,
-    "date": "2019-08-24T14:15:22Z",
-    "alt": 0
+    "time": "2021-01-24T14:15:22Z",
+    "serialNumber": "209356",
+    "imei": "1088310383288683021",
+    "lastLocation": {
+      "lat": -42.792091,
+      "lon": 146.909608,
+      "date": "2021-01-23T08:01:54Z",
+      "alt": 12
+    }
   }
-}
 ```
 
 <h3 id="get__rockstar-public_api_v1_devices_{id}-responses">Ответ</h3>
@@ -226,23 +246,49 @@
 
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 [
   {
-    "id": "string",
-    "date": "2019-08-24T14:15:22Z",
-    "text": "string",
+    "id": "yacgLXd4sUGJaNiZmdfhAQ",
+    "date": "2021-01-24T14:15:22Z",
+    "text": "сообщение с устройства на портал",
     "direction": "FromDevice",
-    "subscriber": "string",
     "location": {
-      "lat": 0,
-      "lon": 0,
-      "date": "2019-08-24T14:15:22Z",
-      "alt": 0
+      "lat": -19.858583,
+      "lon": 141.005343,
+      "date": "2021-01-24T14:13:15Z",
+      "alt": 2
     }
-  }
+  },
+  {
+    "id": "yacgLXd4sUGJaNiZmdfhAQ",
+    "date": "2021-01-24T14:15:22Z",
+    "text": "сообщение с устройства на мобильный",
+    "direction": "FromDevice",
+    "location": {
+      "lat": -19.858583,
+      "lon": 141.005343,
+      "date": "2021-01-24T14:13:15Z",
+      "alt": 2
+    },
+    "childs": [
+      {
+        "id": "yacgLXd4sUGJaNiZmdfhAQ",
+        "date": "2021-01-24T14:15:22Z",
+        "text": "сообщение с устройства на мобильный",
+        "direction": "FromDevice",
+        "subscriber": "79153925491",
+        "location": {
+          "lat": -19.858583,
+          "lon": 141.005343,
+          "date": "2021-01-24T14:13:15Z",
+          "alt": 2
+        }
+      }
+    ]
+  },
 ]
 ```
 
@@ -271,17 +317,31 @@
 
 ```json
 {
-  "id": "yacgLXd4sUGJaNiZmdfhAQ",
-  "date": "2021-01-24T14:15:22Z",
-  "text": "сообщение с устройства",
-  "direction": "FromDevice",
-  "subscriber": "79153925491",
-  "location": {
-    "lat": -19.858583,
-    "lon": 141.005343,
-    "date": "2021-01-24T14:13:15Z",
-    "alt": 2
-  }
+    "id": "yacgLXd4sUGJaNiZmdfhAQ",
+    "date": "2021-01-24T14:15:22Z",
+    "text": "сообщение с устройства на мобильный",
+    "direction": "FromDevice",
+    "location": {
+      "lat": -19.858583,
+      "lon": 141.005343,
+      "date": "2021-01-24T14:13:15Z",
+      "alt": 2
+    },
+    "childs": [
+      {
+        "id": "yacgLXd4sUGJaNiZmdfhAQ",
+        "date": "2021-01-24T14:15:22Z",
+        "text": "сообщение с устройства на мобильный",
+        "direction": "FromDevice",
+        "subscriber": "79153925491",
+        "location": {
+          "lat": -19.858583,
+          "lon": 141.005343,
+          "date": "2021-01-24T14:13:15Z",
+          "alt": 2
+        }
+      }
+    ]
 }
 ```
 
@@ -311,21 +371,15 @@
 
 
 
-> 200 HTTP
+> Пример ответа
 
 ```json
 {
-  "id": "string",
-  "date": "2019-08-24T14:15:22Z",
-  "text": "string",
-  "direction": "FromDevice",
-  "subscriber": "string",
-  "location": {
-    "lat": 0,
-    "lon": 0,
-    "date": "2019-08-24T14:15:22Z",
-    "alt": 0
-  }
+  "id": "VzOZYD0KNUWZ6TxDqHqFpw",
+  "date": "2021-01-26T14:15:22Z",
+  "text": "привет! как дела?",
+  "direction": "ToDevice",
+  "subscriber": "79153925491"
 }
 ```
 
