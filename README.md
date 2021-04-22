@@ -260,7 +260,7 @@
 ```json
 [
   {
-    "id": "yacgLXd4sUGJaNiZmdfhAQ",
+    "id": "oyYFZZaGDUmt3R7iUItuyg",
     "date": "2021-01-24T14:15:22Z",
     "text": "сообщение с устройства на портал",
     "direction": "FromDevice",
