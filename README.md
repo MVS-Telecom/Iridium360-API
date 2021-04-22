@@ -90,21 +90,9 @@
 
 |Код|Статус|Описание|Формат ответа|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|Inline|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[[ApiDevicePointView](#schemaapidevicepointview)]|
 
 <h3 id="get__rockstar-public_api_v1_points-responseschema">Формат ответа</h3>
-
-Status Code **200**
-
-|Имя|Тип|Обязательно|Ограничения|Описание|
-|---|---|---|---|---|
-|*anonymous*|[[ApiDevicePointView](#schemaapidevicepointview)]|false|none|none|
-|» id|string¦null|false|none|none|
-|» location|[Location](#schemalocation)|false|none|none|
-|»» lat|number(double)|false|none|none|
-|»» lon|number(double)|false|none|none|
-|»» date|string(date-time)¦null|false|none|none|
-|»» alt|number(double)¦null|false|none|none|
 
 <aside class="success">
 
