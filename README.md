@@ -356,6 +356,8 @@
 `POST https://service.iridium360.ru/rockstar-public/api/v1/messages/send`
 
 *Отправить сообщение на устройство*
+> Сообщение будет отправлено в приложение **Iridium360° Connect** (скачать для [Android](https://play.google.com/store/apps/details?id=ru.iridium360.connect) и [iOS](https://apps.apple.com/us/app/iridium360-connect/id1471545416))
+
 
 <h3 id="post__rockstar-public_api_v1_messages_send-parameters">Параметры</h3>
 
