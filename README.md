@@ -478,8 +478,8 @@
 |serialNumber|string|да|Серийный номер устройства|
 |imei|string|да|IMEI устройства|
 |lastLocation|[Location](#location)|нет|Последнее известное местоположение устройства|
-|owner|[ApiAccountView](#owner)|нет|Владелец устройства|
-|accessType|[DeviceAccessType](#access)|нет|Доступ к устройству|
+|owner|[ApiAccountView](#apiaccountaiew)|нет|Владелец устройства|
+|accessType|[DeviceAccessType](#deviceaccesstype)|нет|Доступ к устройству|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 
