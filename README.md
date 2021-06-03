@@ -171,7 +171,11 @@
       "lon": 141.00531,
       "date": "2021-01-23T08:01:54Z",
       "alt": 3
-    }
+    },
+	"owner" : {
+      "email": "example@email.com",
+	},
+	"accessType": "Full"
   },
   {
     "time": "2021-01-24T14:15:22Z",
@@ -182,7 +186,11 @@
       "lon": 146.909608,
       "date": "2021-01-23T08:01:54Z",
       "alt": 12
-    }
+    },
+	"owner" : {
+      "email": "somebody@email.com",
+	},
+	"accessType": "Readonly"
   },
   {
     "time": "2021-01-24T14:15:22Z",
@@ -230,8 +238,12 @@
       "lon": 146.909608,
       "date": "2021-01-23T08:01:54Z",
       "alt": 12
-    }
-  }
+    },
+	"owner" : {
+      "email": "example@email.com",
+	},
+	"accessType": "Full"
+}
 ```
 
 ***
@@ -449,7 +461,11 @@
     "lon": 0,
     "date": "2019-08-24T14:15:22Z",
     "alt": 0
-  }
+  },
+  "owner" : {
+    "email": string,
+  },
+  "accessType": "Full"
 }
 
 ```
@@ -462,6 +478,8 @@
 |serialNumber|string|да|Серийный номер устройства|
 |imei|string|да|IMEI устройства|
 |lastLocation|[Location](#location)|нет|Последнее известное местоположение устройства|
+|owner|[ApiAccountView](#owner)|нет|Владелец устройства|
+|accessType|[DeviceAccessType](#access)|нет|Доступ к устройству|
 
 <h2 id="tocS_ApiMessageView">ApiMessageView</h2>
 
@@ -533,6 +551,20 @@
 |---|---|
 |FromDevice|Сообщение с устройства|
 |ToDevice|Сообщение на устройство|
+
+
+<h2 id="tocS_MessageDirection">DeviceAccessType</h2>
+
+*Доступ к устройству*
+
+
+#### Значения
+
+|Значение|Описание|
+|---|---|
+|Readonly|Только просмотр. Имеет доступ «только чтение» к тем устройствам, к которым ему дал доступ владелец|
+|Full|Полный доступ. Имеет доступ ко всем устройствам, к которым ему дал доступ владелец|
+
 
 
 
