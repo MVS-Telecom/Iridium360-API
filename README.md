@@ -172,10 +172,10 @@
       "date": "2021-01-23T08:01:54Z",
       "alt": 3
     },
-	"owner" : {
+    "owner" : {
       "email": "example@email.com",
-	},
-	"accessType": "Full"
+    },
+    "accessType": "Full"
   },
   {
     "time": "2021-01-24T14:15:22Z",
@@ -187,10 +187,10 @@
       "date": "2021-01-23T08:01:54Z",
       "alt": 12
     },
-	"owner" : {
+    "owner" : {
       "email": "somebody@email.com",
-	},
-	"accessType": "Readonly"
+    },
+    "accessType": "Readonly"
   },
   {
     "time": "2021-01-24T14:15:22Z",
@@ -239,10 +239,10 @@
       "date": "2021-01-23T08:01:54Z",
       "alt": 12
     },
-	"owner" : {
+    "owner" : {
       "email": "example@email.com",
-	},
-	"accessType": "Full"
+    },
+    "accessType": "Full"
 }
 ```
 
