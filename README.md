@@ -463,7 +463,7 @@
     "alt": 0
   },
   "owner" : {
-    "email": string,
+    "email": "string",
   },
   "accessType": "Full"
 }
