@@ -23,9 +23,9 @@
 > Проверить работу API прямо из браузера можно по ссылке [Swagger UI](https://service.iridium360.ru/swagger/index.html)
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/account`
+## Получить информацию об аккаунте
 
-*Получить информацию об аккаунте*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/account`
 
 <h3 id="get__rockstar-public_api_v1_account-parameters">Параметры</h3>
 
@@ -53,9 +53,9 @@
 
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/devices`
+## Получить устройства в аккаунте
 
-*Получить устройства в аккаунте*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/devices`
 
 <h3 id="get__rockstar-public_api_v1_devices-parameters">Параметры</h3>
 
@@ -122,9 +122,9 @@
 ```
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/devices/{id}`
+## Получить устройство по id в аккаунте
 
-*Получить устройство по id в аккаунте*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/devices/{id}`
 
 > **Данный метод принимает id или серийный номер. 
 > По id можно получить устройства, которыми владеет текущий аккаунт, а также устройства к которым предоставлен доступ. **Это рекомендуемый способ.**
@@ -170,9 +170,9 @@
 ```
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/points`
+## Получить список точек устройства
 
-*Получить список точек устройства*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/points`
 
 <h3 id="get__rockstar-public_api_v1_points-parameters">Параметры</h3>
 
@@ -226,9 +226,9 @@
 ```
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/points/{id}`
+## Получить инфу о точке устройства
 
-*Получить инфу о точке устройства*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/points/{id}`
 
 <h3 id="get__rockstar-public_api_v1_points_{id}-parameters">Параметры</h3>
 
@@ -260,9 +260,9 @@
 
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/messages`
+## Получить сообщения отправленные / полученные с устройства
 
-*Получить сообщения отправленные / полученные с устройства*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/messages`
 
 <h3 id="get__rockstar-public_api_v1_messages-parameters">Параметры</h3>
 
@@ -327,9 +327,9 @@
 ```
 
 ***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/messages/{id}`
+## Получить сообщение по id, а также его дочерние сообщения (при их наличии)
 
-*Получить сообщение по id, а также его дочерние сообщения (при их наличии)*
+`GET https://service.iridium360.ru/rockstar-public/api/v1/messages/{id}`
 
 <h3 id="get__rockstar-public_api_v1_messages_{id}-parameters">Параметры</h3>
 
@@ -378,9 +378,10 @@
 ```
 
 ***
+## Отправить сообщение на устройство
+
 `POST https://service.iridium360.ru/rockstar-public/api/v1/messages/send`
 
-*Отправить сообщение на устройство*
 > Сообщение будет отправлено в приложение **Iridium360° Connect** (скачать для [Android](https://play.google.com/store/apps/details?id=ru.iridium360.connect) и [iOS](https://apps.apple.com/us/app/iridium360-connect/id1471545416))
 
 
