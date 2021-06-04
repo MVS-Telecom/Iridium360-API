@@ -51,94 +51,6 @@
 }
 ```
 
-***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/points`
-
-*Получить список точек устройства*
-
-<h3 id="get__rockstar-public_api_v1_points-parameters">Параметры</h3>
-
-|Имя|Расположение|Тип|Обязательный|Описание|
-|---|---|---|---|---|
-|id|query|string|да|Id устройства**|
-|start|query|string(date-time)|нет|Дата (вкл) с которой выдать точки|
-|end|query|string(date-time)|нет|Дата (вкл) до которой выдать точки|
-|count|query|integer(int32)|нет|Максимальное кол-во выдаваемых точек|
-|service-session|header|string|да|API токен|
-
-
-<h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#apidevicepointview)]|
-
-> Пример ответа
-
-```json
-[
-  {
-    "id": "w7oUijvyIECNJPl2pFNnzg",
-    "location": {
-      "lat": -19.858583,
-      "lon": 141.005343,
-      "date": "2021-01-25T14:15:22Z",
-      "alt": 2
-    }
-  },
-  {
-    "id": "YEAJoY2FdUiSN8itgj3d3Q",
-    "location": {
-      "lat": -19.85858,
-      "lon": 141.00531,
-      "date": "2021-01-24T08:01:54Z",
-      "alt": 3
-    }
-  },
-  {
-    "id": "W0LBoaFjKkCiSavE8ehTPQ",
-    "location": {
-      "lat": -19.85855,
-      "lon": 141.00529,
-      "date": "2021-01-24T04:32:19Z",
-      "alt": 2
-    }
-  }
-]
-```
-
-***
-`GET https://service.iridium360.ru/rockstar-public/api/v1/points/{id}`
-
-*Получить инфу о точке устройства*
-
-<h3 id="get__rockstar-public_api_v1_points_{id}-parameters">Параметры</h3>
-
-|Имя|Расположение|Тип|Обязательный|Описание|
-|---|---|---|---|---|
-|id|path|string|да|Id точки|
-|service-session|header|string|да|API токен|
-
-
-<h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
-
-|Код|Статус|Описание|Формат ответа|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#apidevicepointview)|
-
-> Пример ответа
-
-```json
-{
-    "id": "YEAJoY2FdUiSN8itgj3d3Q",
-    "location": {
-      "lat": -19.85858,
-      "lon": 141.00531,
-      "date": "2021-01-24T08:01:54Z",
-      "alt": 3
-    }
-  }
-```
 
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/devices`
@@ -256,6 +168,96 @@
     "accessType": "Full"
 }
 ```
+
+***
+`GET https://service.iridium360.ru/rockstar-public/api/v1/points`
+
+*Получить список точек устройства*
+
+<h3 id="get__rockstar-public_api_v1_points-parameters">Параметры</h3>
+
+|Имя|Расположение|Тип|Обязательный|Описание|
+|---|---|---|---|---|
+|id|query|string|да|Id устройства**|
+|start|query|string(date-time)|нет|Дата (вкл) с которой выдать точки|
+|end|query|string(date-time)|нет|Дата (вкл) до которой выдать точки|
+|count|query|integer(int32)|нет|Максимальное кол-во выдаваемых точек|
+|service-session|header|string|да|API токен|
+
+
+<h3 id="get__rockstar-public_api_v1_points-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|array [[ApiDevicePointView](#apidevicepointview)]|
+
+> Пример ответа
+
+```json
+[
+  {
+    "id": "w7oUijvyIECNJPl2pFNnzg",
+    "location": {
+      "lat": -19.858583,
+      "lon": 141.005343,
+      "date": "2021-01-25T14:15:22Z",
+      "alt": 2
+    }
+  },
+  {
+    "id": "YEAJoY2FdUiSN8itgj3d3Q",
+    "location": {
+      "lat": -19.85858,
+      "lon": 141.00531,
+      "date": "2021-01-24T08:01:54Z",
+      "alt": 3
+    }
+  },
+  {
+    "id": "W0LBoaFjKkCiSavE8ehTPQ",
+    "location": {
+      "lat": -19.85855,
+      "lon": 141.00529,
+      "date": "2021-01-24T04:32:19Z",
+      "alt": 2
+    }
+  }
+]
+```
+
+***
+`GET https://service.iridium360.ru/rockstar-public/api/v1/points/{id}`
+
+*Получить инфу о точке устройства*
+
+<h3 id="get__rockstar-public_api_v1_points_{id}-parameters">Параметры</h3>
+
+|Имя|Расположение|Тип|Обязательный|Описание|
+|---|---|---|---|---|
+|id|path|string|да|Id точки|
+|service-session|header|string|да|API токен|
+
+
+<h3 id="get__rockstar-public_api_v1_points_{id}-responses">Ответ</h3>
+
+|Код|Статус|Описание|Формат ответа|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[ApiDevicePointView](#apidevicepointview)|
+
+> Пример ответа
+
+```json
+{
+    "id": "YEAJoY2FdUiSN8itgj3d3Q",
+    "location": {
+      "lat": -19.85858,
+      "lon": 141.00531,
+      "date": "2021-01-24T08:01:54Z",
+      "alt": 3
+    }
+  }
+```
+
 
 ***
 `GET https://service.iridium360.ru/rockstar-public/api/v1/messages`
