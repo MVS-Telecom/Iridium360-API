@@ -271,9 +271,12 @@
 |Имя|Расположение|Тип|Обязательный|Описание|
 |---|---|---|---|---|
 |id|query|string|да|Id устройства**|
-|startId|query|string|нет|Id сообщения (включительно), с которого нужно выдать сообщения|
-|count|query|integer(int32)|нет|Кол-во сообщений|
+|startId|query|string|нет|Id сообщения (включительно), начиная с которого нужно выдать сообщения|
+|endId|query|string|нет|Id сообщения (включительно), до которого нужно выдать сообщения|
+|count|query|integer(int32)|нет|Кол-во сообщений (по умолчанию 50)|
 |service-session|header|string|да|API токен|
+
+> Параметр `count` игнорируется, если переданы оба параметра `startId` и `endId`
 
 
 <h3 id="get__rockstar-public_api_v1_messages-responses">Ответ</h3>
