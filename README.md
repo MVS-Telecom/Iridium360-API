@@ -203,16 +203,24 @@
       "lat": -19.858583,
       "lon": 141.005343,
       "date": "2021-01-25T14:15:22Z",
-      "alt": 2
+      "alt": 2,
+      "sog": 0.1852,
+      "cog": 0,
+      "sogInstantaneous": 0.1852,
+      "cogInstantaneous": 0
     }
   },
   {
-    "id": "YEAJoY2FdUiSN8itgj3d3Q",
+    "id": "w7oUijvyIECNJPl2pFNnzg",
     "location": {
       "lat": -19.85858,
       "lon": 141.00531,
       "date": "2021-01-24T08:01:54Z",
-      "alt": 3
+      "alt": 3,
+      "sog": 0,
+      "cog": 0,
+      "sogInstantaneous": 0,
+      "cogInstantaneous": 0
     }
   },
   {
@@ -221,7 +229,11 @@
       "lat": -19.85855,
       "lon": 141.00529,
       "date": "2021-01-24T04:32:19Z",
-      "alt": 2
+      "alt": 2,
+      "sog": 0.0572,
+      "cog": 0.2101,
+      "sogInstantaneous": 0.0572,
+      "cogInstantaneous": 0.2101
     }
   }
 ]
@@ -255,7 +267,11 @@
       "lat": -19.85858,
       "lon": 141.00531,
       "date": "2021-01-24T08:01:54Z",
-      "alt": 3
+      "alt": 3,
+      "sog": 0.1244,
+      "cog": 0.0569,
+      "sogInstantaneous": 0.1244,
+      "cogInstantaneous": 0.0569
     }
   }
 ```
